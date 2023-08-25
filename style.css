@@ -3,9 +3,9 @@
   padding: 0;
   box-sizing: border-box;
   overflow: hidden;
+  font-family: 'Roboto', sans-serif;
 }
-
-
+@import url("https://fonts.googleapis.com/css2?family=Lugrasimo&family=Roboto:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap");
 
 body {
   display: flex;
@@ -25,6 +25,7 @@ nav {
 
 nav div.profile svg {
   width: 48px;
+  cursor: pointer;
 }
 nav div.broad {
   padding: 2%;
@@ -71,24 +72,20 @@ input[type="search"] {
   outline: 0;
   background-color: #f0f2f5;
 }
-.chat-container{
+.chat-container {
   scroll-behavior: smooth;
-  padding: 2% 0 ;
+  padding: 2% 0;
   height: 82vh;
   overflow: auto;
   scrollbar-width: 10px;
   scrollbar-color: blue;
   background-color: #fff;
-
 }
-.chat-container::-webkit-scrollbar{
-  width: 10px; 
-  color: yellow;
-} 
-.chat-grid{
+
+.chat-grid {
   display: grid;
   grid-template-columns: auto 1fr;
-  gap: .5rem;
+  gap: 0.5rem;
   padding-left: 5%;
   cursor: pointer;
 }
@@ -101,14 +98,20 @@ input[type="search"] {
   margin-right: 40%;
   grid-row: 1/4;
 }
-.profilePicture img{
+.profilePicture img {
   width: 45px;
+  height: 45px;
   object-fit: cover;
 }
-.name{
-  /* grid-column: 2/4; */
-  font-size: 1.2rem;
+.name {
+  grid-column: 2;
+  font-size: 1.1rem;
+  color: #425058;
   font-weight: 600;
+}
+.message {
+  font-size: 0.8rem;
+  color: #425058;
 }
 
 .right {

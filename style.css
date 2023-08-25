@@ -13,6 +13,7 @@ body {
 }
 .left {
   width: 30vw;
+  background-color: #f0f2f569;
 }
 nav {
   display: flex;
@@ -42,8 +43,10 @@ nav div.broad svg {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  position: sticky;
   align-items: center;
   background-color: #fff;
+  box-shadow: 0 1px 10px #0000004d;
   padding: 2% 3%;
 }
 .placeholder {
@@ -67,6 +70,45 @@ input[type="search"] {
   border: 0;
   outline: 0;
   background-color: #f0f2f5;
+}
+.chat-container{
+  scroll-behavior: smooth;
+  padding: 2% 0 ;
+  height: 82vh;
+  overflow: auto;
+  scrollbar-width: 10px;
+  scrollbar-color: blue;
+  background-color: #fff;
+
+}
+.chat-container::-webkit-scrollbar{
+  width: 10px; 
+  color: yellow;
+} 
+.chat-grid{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: .5rem;
+  padding-left: 5%;
+  cursor: pointer;
+}
+
+.profilePicture {
+  width: 47px;
+  height: 47px;
+  padding: 1%;
+  border-radius: 50%;
+  margin-right: 40%;
+  grid-row: 1/4;
+}
+.profilePicture img{
+  width: 45px;
+  object-fit: cover;
+}
+.name{
+  /* grid-column: 2/4; */
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 
 .right {
